@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 console.log("Welcome to Koushik's Portfolio");
 
 function showResult(course) {
@@ -59,3 +60,6 @@ function showResult(course) {
 
     result.style.display = "block";
 }
+=======
+console.log("Welcome to Koushik's Portfolio");
+>>>>>>> e9ac605ae3c53be879303f70fa4ccad1c0ee09cb

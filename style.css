@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* =========================
    Global
 ========================= */
@@ -344,4 +345,168 @@ nav button{
 .result-table td:first-child{
     font-weight:bold;
     color:#6fffd2;
+=======
+body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+    url("chair.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+/* Header */
+
+header {
+    background: linear-gradient(135deg, #000000, #001f3f);
+    color: #00ffcc;
+    text-align: center;
+    padding: 50px;
+    border-bottom: 2px solid #00ffcc;
+}
+
+header h1 {
+    font-size: 45px;
+}
+
+
+/* Navigation */
+
+nav {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #00ffcc;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+
+/* Sections */
+
+section {
+    background: rgba(0,0,0,0.7);
+    width: 80%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #00ffcc;
+}
+
+/* Headings */
+
+h2 {
+    color: #00ffcc;
+}
+
+
+/* Project Cards */
+
+.card {
+    background: #111;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #00ffcc;
+}
+
+
+.card:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+
+/* Skills */
+
+li {
+    margin: 10px;
+    color: #ddd;
+}
+
+
+/* Footer */
+
+footer {
+    background: #111;
+    color: #00ffcc;
+    text-align: center;
+    padding: 20px;
+}
+html {
+    scroll-behavior: smooth;
+}
+.profile {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00ffcc;
+    box-shadow: 0 0 20px #00ffcc;
+}
+.card h3 a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+.card h3 a:hover {
+    color: white;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+nav {
+    background: rgba(0,0,0,0.8);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #00ffcc;
+}
+
+
+nav button {
+    background: transparent;
+    color: #00ffcc;
+    border: 2px solid #00ffcc;
+    padding: 12px 25px;
+    margin: 8px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+nav button:hover {
+    background: #00ffcc;
+    color: black;
+    box-shadow: 0 0 20px #00ffcc;
+}
+
+.resume-btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#007bff;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.resume-btn:hover{
+    background:#0056b3;
+>>>>>>> e9ac605ae3c53be879303f70fa4ccad1c0ee09cb
 }
