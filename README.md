@@ -1,2 +1,0 @@
-# KoushikPortfolio
-My Portfolio

@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-/* =========================
-   Global
-========================= */
+/* ==========================
+   GLOBAL
+========================== */
 
 *{
     margin:0;
@@ -14,125 +13,99 @@ html{
 }
 
 body{
-    font-family:'Courier New', monospace;
-    color:white;
-
-    background:
-    linear-gradient(rgba(0,0,0,0.78),rgba(0,0,0,0.85)),
+    font-family:"Courier New", monospace;
+    background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
     url("chair.jpg");
-
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
+    color:#fff;
+    overflow-x:hidden;
 }
 
-/* =========================
-   Header
-========================= */
+/* ==========================
+   HEADER
+========================== */
 
 header{
+    background:linear-gradient(135deg,#000,#061b2c);
     text-align:center;
     padding:50px 20px;
-    background:linear-gradient(135deg,#000,#001f3f);
-    border-bottom:2px solid #00ffcc;
+    border-bottom:2px solid #00ffe5;
 }
 
 header h1{
-    font-size:45px;
-    color:#00ffcc;
+    color:#00ffe5;
+    font-size:48px;
     margin-bottom:20px;
 }
 
 .profile-pic{
-    width:170px;
-    height:170px;
-    object-fit:cover;
+    width:220px;
+    height:220px;
     border-radius:50%;
-    border:4px solid #00ffcc;
-    box-shadow:0 0 25px #00ffcc;
+    object-fit:cover;
+    border:5px solid #00ffe5;
+    box-shadow:0 0 30px #00ffe5;
 }
 
-/* =========================
-   Navigation
-========================= */
+/* ==========================
+   NAVIGATION
+========================== */
 
 nav{
-    background:rgba(0,0,0,.9);
+    background:#000;
     text-align:center;
     padding:18px;
+    border-bottom:2px solid #00ffe5;
 }
 
 nav button{
     background:transparent;
-    color:#00ffcc;
-    border:2px solid #00ffcc;
-    padding:12px 24px;
+    color:#00ffe5;
+    border:2px solid #00ffe5;
+    padding:12px 28px;
     margin:8px;
-    border-radius:25px;
+    border-radius:30px;
     cursor:pointer;
-    font-size:16px;
+    font-size:18px;
     transition:.3s;
 }
 
 nav button:hover{
-    background:#00ffcc;
-    color:black;
-    box-shadow:0 0 20px #00ffcc;
+    background:#00ffe5;
+    color:#000;
+    box-shadow:0 0 20px #00ffe5;
 }
 
-/* =========================
-   Sections
-========================= */
+/* ==========================
+   SECTIONS
+========================== */
 
 section{
     width:80%;
-    margin:30px auto;
-    background:rgba(0,0,0,.72);
-    border:1px solid #00ffcc;
+    margin:35px auto;
+    background:rgba(0,0,0,.75);
+    border:1px solid #00ffe5;
     border-radius:15px;
-    padding:30px;
+    padding:35px;
 }
 
 h2{
-    color:#00ffcc;
+    color:#00ffe5;
     margin-bottom:20px;
+    font-size:35px;
 }
 
 p{
     line-height:1.8;
+    font-size:18px;
     text-align:justify;
 }
 
-/* =========================
-   Cards
-========================= */
-
-.card{
-    background:#111;
-    padding:20px;
-    margin:18px 0;
-    border-left:5px solid #00ffcc;
-    border-radius:10px;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 0 20px #00ffcc;
-}
-
-.card h3 a{
-    color:#00ffcc;
-    text-decoration:none;
-}
-
-.card h3 a:hover{
-    color:white;
-}
-
-/* =========================
-   Lists
-========================= */
+/* ==========================
+   SKILLS
+========================== */
 
 ul{
     padding-left:25px;
@@ -140,162 +113,48 @@ ul{
 
 li{
     margin:12px 0;
-    font-size:18px;
+    font-size:20px;
 }
 
-/* =========================
-   Academic Results
-========================= */
+/* ==========================
+   PROJECTS
+========================== */
 
-#results{
-    text-align:center;
-}
-
-.result-btn{
-    background:transparent;
-    color:#00ffcc;
-    border:2px solid #00ffcc;
-    padding:12px 24px;
-    margin:10px;
-    border-radius:25px;
-    cursor:pointer;
-    font-size:16px;
-    transition:.3s;
-}
-
-.result-btn:hover{
-    background:#00ffcc;
-    color:black;
-    box-shadow:0 0 20px #00ffcc;
-}
-
-.result-card{
-    display:none;
-    width:360px;
-    margin:30px auto;
+.card{
     background:#111;
-    border-left:5px solid #00ffcc;
-    border-radius:10px;
     padding:20px;
-    color:white;
-}
-
-/* =========================
-   Resume & LinkedIn
-========================= */
-
-.resume-btn,
-.social-btn{
-
-    display:inline-block;
-    margin:10px;
-    padding:12px 25px;
-
-    color:#00ffcc;
-    border:2px solid #00ffcc;
-
-    border-radius:25px;
-
-    text-decoration:none;
-
+    margin:20px 0;
+    border-left:5px solid #00ffe5;
+    border-radius:12px;
     transition:.3s;
-
-    background:transparent;
-
-    font-weight:bold;
 }
 
-.resume-btn:hover,
-.social-btn:hover{
-
-    background:#00ffcc;
-
-    color:black;
-
-    box-shadow:0 0 20px #00ffcc;
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px #00ffe5;
 }
 
-footer{
-    width:100%;
-    background:#061320;
-    border-top:2px solid #00FFE5;
-    padding:25px 0;
-    margin-top:50px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    box-shadow:0 -3px 20px rgba(0,255,229,0.25);
+.card h3{
+    color:#00ffe5;
+    margin-bottom:10px;
 }
 
-footer p{
-    margin:0;
-    color:#ffffff;
-    font-size:18px;
-    font-family:"Courier New", monospace;
-    letter-spacing:1px;
-    text-align:center;
+.card a{
+    color:#00ffe5;
+    text-decoration:none;
 }
 
-footer span{
-    color:#00FFE5;
-    font-weight:bold;
-    text-shadow:0 0 8px #00FFE5;
+.card a:hover{
+    color:#fff;
 }
 
-footer:hover{
-    box-shadow:
-        0 -2px 15px #00FFE5,
-        0 -2px 30px rgba(0,255,229,0.5);
-    transition:0.4s ease;
-}
-/* =========================
-   Responsive
-========================= */
+/* ==========================
+   EDUCATION BUTTONS
+========================== */
 
-@media(max-width:768px){
-
-section{
-    width:95%;
-}
-
-nav button{
-    width:90%;
-}
-
-.profile-pic{
-    width:140px;
-    height:140px;
-}
-
-.result-card{
-    width:95%;
-}
-
-}
-.result-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:15px;
-}
-
-.result-table td{
-    border:1px solid #00ffcc;
-    padding:12px;
-    color:white;
-}
-
-.result-table tr:nth-child(even){
-    background:#1a1a1a;
-}
-
-.result-table strong{
-    color:#00ffcc;
-}
 .education-buttons{
     text-align:center;
-    margin:20px 0;
+    margin:30px 0;
 }
 
 .education-buttons button{
@@ -305,30 +164,33 @@ nav button{
     padding:12px 30px;
     margin:10px;
     border-radius:10px;
-    font-size:18px;
     cursor:pointer;
-    transition:0.3s;
+    font-size:18px;
+    transition:.3s;
 }
 
 .education-buttons button:hover{
-    background:#1e88e5;
+    background:#1976d2;
     transform:scale(1.05);
 }
 
+/* ==========================
+   RESULT BOX
+========================== */
+
 #resultDisplay{
     display:none;
-    width:80%;
+    width:85%;
     margin:30px auto;
-    padding:20px;
-    background:#222;
-    color:#fff;
-    border:2px solid #6fffd2;
+    background:#111;
+    border:2px solid #00ffe5;
     border-radius:15px;
+    padding:25px;
 }
 
 #resultDisplay h3{
-    color:#6fffd2;
     text-align:center;
+    color:#00ffe5;
     margin-bottom:20px;
 }
 
@@ -338,175 +200,152 @@ nav button{
 }
 
 .result-table td{
-    border:1px solid #555;
-    padding:12px;
+    border:1px solid #444;
+    padding:15px;
 }
 
 .result-table td:first-child{
+    color:#00ffe5;
     font-weight:bold;
-    color:#6fffd2;
-=======
-body {
-    margin: 0;
-    font-family: 'Courier New', monospace;
-
-    background:
-    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
-    url("chair.jpg");
-
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
-    color: white;
 }
 
-/* Header */
-
-header {
-    background: linear-gradient(135deg, #000000, #001f3f);
-    color: #00ffcc;
-    text-align: center;
-    padding: 50px;
-    border-bottom: 2px solid #00ffcc;
+.result-table tr:nth-child(even){
+    background:#1a1a1a;
 }
 
-header h1 {
-    font-size: 45px;
-}
+/* ==========================
+   BUTTONS
+========================== */
 
+.resume-btn,
+.social-btn{
 
-/* Navigation */
-
-nav {
-    background: #111;
-    padding: 20px;
-    text-align: center;
-}
-
-nav a {
-    color: #00ffcc;
-    text-decoration: none;
-    margin: 20px;
-    font-size: 18px;
-}
-
-nav a:hover {
-    color: white;
-}
-
-
-/* Sections */
-
-section {
-    background: rgba(0,0,0,0.7);
-    width: 80%;
-    margin: 30px auto;
-    padding: 25px;
-    border-radius: 15px;
-    border: 1px solid #00ffcc;
-}
-
-/* Headings */
-
-h2 {
-    color: #00ffcc;
-}
-
-
-/* Project Cards */
-
-.card {
-    background: #111;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 10px;
-    border-left: 5px solid #00ffcc;
-}
-
-
-.card:hover {
-    transform: scale(1.03);
-    transition: 0.3s;
-}
-
-
-/* Skills */
-
-li {
-    margin: 10px;
-    color: #ddd;
-}
-
-
-/* Footer */
-
-footer {
-    background: #111;
-    color: #00ffcc;
-    text-align: center;
-    padding: 20px;
-}
-html {
-    scroll-behavior: smooth;
-}
-.profile {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #00ffcc;
-    box-shadow: 0 0 20px #00ffcc;
-}
-.card h3 a {
-    color: #00ffcc;
-    text-decoration: none;
-}
-
-.card h3 a:hover {
-    color: white;
-    text-shadow: 0 0 10px #00ffcc;
-}
-
-nav {
-    background: rgba(0,0,0,0.8);
-    padding: 20px;
-    text-align: center;
-    border-bottom: 1px solid #00ffcc;
-}
-
-
-nav button {
-    background: transparent;
-    color: #00ffcc;
-    border: 2px solid #00ffcc;
-    padding: 12px 25px;
-    margin: 8px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-
-nav button:hover {
-    background: #00ffcc;
-    color: black;
-    box-shadow: 0 0 20px #00ffcc;
-}
-
-.resume-btn{
     display:inline-block;
-    padding:12px 25px;
-    background:#007bff;
-    color:white;
+    margin:12px;
+    padding:12px 28px;
+
+    color:#00ffe5;
+    border:2px solid #00ffe5;
+
     text-decoration:none;
-    border-radius:8px;
-    font-size:18px;
-    transition:0.3s;
+    border-radius:30px;
+
+    transition:.3s;
 }
 
-.resume-btn:hover{
-    background:#0056b3;
->>>>>>> e9ac605ae3c53be879303f70fa4ccad1c0ee09cb
+.resume-btn:hover,
+.social-btn:hover{
+
+    background:#00ffe5;
+    color:#000;
+    box-shadow:0 0 20px #00ffe5;
+}
+
+/* ==========================
+   CONTACT
+========================== */
+
+.contact p{
+    margin:15px 0;
+    font-size:20px;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    width:100%;
+    background:#061320;
+
+    border-top:2px solid #00ffe5;
+
+    margin-top:40px;
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 -3px 15px rgba(0,255,229,.3);
+}
+
+footer p{
+    color:#fff;
+    font-size:18px;
+    margin:0;
+}
+
+footer span{
+    color:#00ffe5;
+    font-weight:bold;
+}
+
+footer:hover{
+    box-shadow:0 -2px 20px #00ffe5;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+header h1{
+    font-size:36px;
+}
+
+.profile-pic{
+    width:170px;
+    height:170px;
+}
+
+section{
+    width:95%;
+    padding:20px;
+}
+
+nav button{
+    width:90%;
+}
+
+.education-buttons button{
+    width:90%;
+}
+
+#resultDisplay{
+    width:95%;
+}
+
+.result-table td{
+    font-size:15px;
+    padding:10px;
+}
+
+footer p{
+    font-size:15px;
+}
+
+}
+
+
+footer{
+    width:100%;
+    background:#061320;
+    border-top:2px solid #00FFE5;
+    padding:20px 0;
+    margin-top:50px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+footer p{
+    margin:0;
+    color:#ffffff;
+    font-size:18px;
+    font-family:"Courier New", monospace;
+    letter-spacing:1px;
 }
