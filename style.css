@@ -349,3 +349,20 @@ footer p{
     font-family:"Courier New", monospace;
     letter-spacing:1px;
 }
+
+#contact a{
+    color:#ffffff;
+    text-decoration:underline;
+    text-decoration-color:#ffffff;
+    text-underline-offset:4px;
+}
+
+#contact a:visited{
+    color:#ffffff;
+}
+
+#contact a:hover{
+    color:#00FFE5;
+    text-decoration-color:#00FFE5;
+    text-shadow:0 0 8px #00FFE5;
+}
