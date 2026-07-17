@@ -3,62 +3,56 @@ console.log("Welcome to Koushik's Portfolio");
 function showResult(course) {
 
     const result = document.getElementById("resultDisplay");
+    let data = {};
 
-    let title = "";
-    let institute = "";
-    let year = "";
-    let location = "";
-    let score = "";
+    if (course === "sslc") {
+        data = {
+            title: "📘 SSLC (10th)",
+            institute: "Sri Siddaganga Composite High School",
+            year: "2020 - 2021",
+            location: "Davanagere, Karnataka",
+            score: "77.12%"
+        };
+    }
 
-    switch(course){
+    else if (course === "puc") {
+        data = {
+            title: "📙 PUC (12th)",
+            institute: "Nuthana Independent PU College",
+            year: "2021 - 2023",
+            location: "Davanagere, Karnataka",
+            score: "88.93%"
+        };
+    }
 
-        case "sslc":
-            title = "📘 SSLC (10th)";
-            institute = "SRI SIDDAGANGA COMPOSITE HIGH SCHOOL";
-            year = "2020 - 2021";
-            location = "Davanagere, Karnataka";
-            score = "77.12%";
-            break;
-
-        case "puc":
-            title = "📙 PUC (12th)";
-            institute = "NUTHANA INDEPENDENT PU COLLEGE";
-            year = "2021 - 2023";
-            location = "Davanagere, Karnataka";
-            score = "88.93%";
-            break;
-
-        case "btech":
-            title = "🎓 B.Tech (Computer Science & Engineering)";
-            institute = "GM UNIVERSITY";
-            year = "2023 - 2027";
-            location = "Davanagere, Karnataka";
-            score = "CGPA : 7.61";
-            break;
+    else if (course === "btech") {
+        data = {
+            title: "🎓 B.Tech (Computer Science & Engineering)",
+            institute: "GM University",
+            year: "2023 - 2027",
+            location: "Davanagere, Karnataka",
+            score: "CGPA: 7.61"
+        };
     }
 
     result.innerHTML = `
-        <h3>${title}</h3>
-
+        <h3>${data.title}</h3>
         <table class="result-table">
             <tr>
-                <td><strong>Institute</strong></td>
-                <td>${institute}</td>
+                <td>Institute</td>
+                <td>${data.institute}</td>
             </tr>
-
             <tr>
-                <td><strong>Academic Year</strong></td>
-                <td>${year}</td>
+                <td>Academic Year</td>
+                <td>${data.year}</td>
             </tr>
-
             <tr>
-                <td><strong>Location</strong></td>
-                <td>${location}</td>
+                <td>Location</td>
+                <td>${data.location}</td>
             </tr>
-
             <tr>
-                <td><strong>Result</strong></td>
-                <td><strong>${score}</strong></td>
+                <td>Result</td>
+                <td>${data.score}</td>
             </tr>
         </table>
     `;

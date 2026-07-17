@@ -29,15 +29,14 @@
     <h2>About Me</h2>
 I am Koushik LK, a Computer Science and Engineering student at GM University, Davanagere, passionate about Artificial Intelligence, Software Development, and Python Programming. I have a strong foundation in core computer science concepts and enjoy building innovative projects to solve real-world problems. As a quick learner and collaborative team player, I am committed to continuously improving my technical skills and aspire to become a skilled Software Engineer developing impactful technology solutions.
 
-<section id="results">
-    <h2>🎓 Academic Results</h2>
+<div class="education-buttons">
+    <button onclick="showResult('sslc')">SSLC</button>
+    <button onclick="showResult('puc')">PUC</button>
+    <button onclick="showResult('btech')">B.Tech</button>
+</div>
 
-    <button class="result-btn" onclick="showResult('sslc')">📘 SSLC (10th)</button>
-    <button class="result-btn" onclick="showResult('puc')">📙 PUC (12th)</button>
-    <button class="result-btn" onclick="showResult('btech')">🎓 B.Tech</button>
+<div id="resultDisplay"></div>
 
-    <div id="resultDisplay" class="result-card" style="display:none;"></div>
-</section>
 
 
 
@@ -221,7 +220,7 @@ Android App Development Bootcamp - Beginner to Pro </a>
 </p>
 </footer>
 
-
+<script src="script.js"></script>
 
 </body>
 </html>
